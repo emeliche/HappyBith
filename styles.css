@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.gift-icon {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.gift-icon img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Стили для фотогалереи */
+.gallery-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallery-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery-img.active {
+  opacity: 1;
+}
+
+/* Стили для PDF-просмотрщика */
+.pdf-viewer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}

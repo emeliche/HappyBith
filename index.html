@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>С Днем Рождения!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Аня, C Днем Рождения!</h1>
+      <div class="gift-icon" onclick="openPdf()">
+        <img src="hb-1.png" alt="Подарок" />
+      </div>
+    </div>
+
+    <!-- Фотогалерея -->
+    <div class="gallery-section">
+      <h2>Ну МЫ!</h2>
+      <div class="gallery">
+        <img src="1.jpg" alt="Фото 1" class="gallery-img active" />
+        <img src="12.jpg" alt="Фото 2" class="gallery-img" />
+        <img src="3.jpg" alt="Фото 3" class="gallery-img" />
+        <img src="4.jpg" alt="Фото 4" class="gallery-img" />
+        <img src="31.jpg" alt="Фото 4" class="gallery-img" />
+        <img src="22.jpg" alt="Фото 4" class="gallery-img" />
+        <img src="5.jpg" alt="Фото 4" class="gallery-img" />
+      </div>
+    </div>
+
+    <!-- PDF-просмотрщик -->
+    <div id="pdf-viewer" class="pdf-viewer">
+      <span class="close-btn" onclick="closePdf()">&times;</span>
+      <iframe id="pdf-iframe" src="" width="100%" height="100%"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
